@@ -124,5 +124,17 @@ Related issue: https://github.com/NixOS/nix-mode/issues/69"
 Related issue: https://github.com/NixOS/nix-mode/issues/72"
   (with-nix-mode-test ("issue-72.nix" :indent t)))
 
+(ert-deftest nix-mode-test-indent-issue-74-1 ()
+  "Proper dedent after blocks when block starts on own line.
+
+Related issue: https://github.com/NixOS/nix-mode/issues/74"
+  (with-nix-mode-test ("issue-74.1.nix" :indent t)))
+
+(ert-deftest nix-mode-test-indent-issue-74-2 ()
+  "Proper dedent after blocks when block starts on own line.
+
+Related issue: https://github.com/NixOS/nix-mode/issues/74"
+  (with-nix-mode-test ("issue-74.2.nix" :indent t)))
+
 (provide 'nix-mode-tests)
 ;;; nix-mode-tests.el ends here
